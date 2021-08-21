@@ -1,0 +1,238 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-family: 'Merriweather', serif;
+
+}
+
+h1 {
+   color: black;
+   font-size: 25px;
+   text-align: center;
+   margin: 10px;
+   padding: 10px;
+}
+
+h2,
+h3 {
+   color: violet;
+   margin: 10px;
+   padding: 10px;
+}
+
+.fondoColor {
+   background-image: linear-gradient(to right bottom, #44024a, #591662, #6f297b, #853c95, #9b4fb0, #956aca, #8e83e0, #889af2, #7ab4f2, #8dc8e9, #b4d7e1, #e0e3e3);
+}
+
+body {
+   background-image: linear-gradient(to right bottom, #44024a, #591662, #6f297b, #853c95, #9b4fb0, #956aca, #8e83e0, #889af2, #7ab4f2, #8dc8e9, #b4d7e1, #e0e3e3);
+   background-color: black;
+   background-size: cover;
+}
+
+a {
+   color: blanchedalmond;
+   padding: 5px;
+   text-align: center;
+}
+
+/*Flex */
+
+.flexBox {
+   display: flex;
+   flex-direction: column;
+}
+
+.spaceEvenly {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   padding: 10px
+}
+
+.spaceItem {
+   padding: 10px;
+   background-color: black;
+   margin: 10px;
+   text-align: center;
+   align-items: center
+}
+
+.spaceCenter {
+   display: flex;
+   color: black;
+   justify-content: center;
+   padding: 10px;
+   margin: 10px;
+}
+
+/*Fin Flex */
+
+/*grid areas */
+
+
+.padreJustifyItemsCenter {
+   display: grid;
+   border: 50px solid #ccc;
+   grid-template-columns: 2fr 1fr 2fr;
+   grid-template-rows: 100px 100px 100px;
+   grid-gap: 10px;
+   justify-items: center;
+
+}
+
+.padreJustifyItemsCenter .item {
+   background-color: black;
+}
+
+/*Fin Grid */
+/*Animaciones/Transiciones */
+h2,
+h3 {
+   animation-duration: 2s;
+   animation-name: aparecer;
+}
+
+
+@keyframes aparecer {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+
+input:focus {
+   width: 200px;
+   font-size: 24px;
+}
+
+/*FIN Animaciones/Transiciones */
+
+.bordesRedondeados {
+   border-radius: 40px;
+   padding: 20px;
+}
+
+.fondoFuerte {
+   background-color: grey;
+}
+
+nav ul li {
+   display: inline;
+}
+
+ul li {
+   color: grey;
+}
+
+ol li {
+   color: lightgrey;
+}
+
+p {
+   font-style: italic;
+   color: whitesmoke;
+}
+
+.negrita {
+   font-weight: 900;
+}
+
+.textoGrande {
+   font-size: 20px;
+}
+
+.centrar {
+   text-align: center;
+}
+
+.subrayado {
+   text-decoration: none;
+   margin: 10px;
+   padding: 10px;
+}
+
+.espaciado {
+   letter-spacing: 5px;
+}
+
+li {
+   display: inline-block;
+   position: relative;
+   font-size: 15px;
+   color: black;
+}
+
+ul li a:hover {
+   background-color: purple;
+   color: white;
+   padding: 4px;
+}
+
+ul.afuera {
+   list-style-position: outside;
+}
+
+ul.c {
+   list-style-type: square;
+}
+
+section {
+   margin: 20px;
+   display: inline-block;
+}
+
+section article {
+   background-color: #cccccc;
+   width: 300px;
+   padding: 30px;
+}
+
+footer {
+   font-size: 13px;
+   padding-top: 50px;
+   text-align: center;
+   padding: 50px;
+}
+
+/*TARJETAS*/
+.contenedor {
+   max-width: 1000px;
+   width: 90%;
+   margin: 0 auto;
+}
+
+.tarjeta {
+   background-color: #cccccc;
+   border-radius: 15px;
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   margin-bottom: 50px;
+}
+
+.tarjeta__img {
+   width: 300px;
+   height: 180px;
+   margin-right: 30px;
+}
+
+.tarjeta__titulo {
+   font-size: 1.5rem;
+   margin-bottom: 20px;
+}
+
+.tarjeta__parrafo {
+   line-height: 28px;
+   font-size: 1rem;
+}
+
+/* FIN TARJETAS*/
